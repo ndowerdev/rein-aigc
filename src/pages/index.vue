@@ -13,10 +13,10 @@ const fullPage = ref(true)
 const previewSettings = usePreviewSettingsStore()
 // const hasil = ref('')
 const hasil = computed(() => {
-  return previewSettings.settings.lastResult ? previewSettings.settings.lastResult.choices[0].text.trim() : ''
+  return previewSettings.settings.davinci003.lastResult ? previewSettings.settings.davinci003.lastResult.choices[0].text.trim() : ''
 })
 const realPrompt = computed(() => {
-  return previewSettings.settings.prompt ? previewSettings.settings.prompt.replaceAll('{keyword}', previewSettings.settings.keyword).replaceAll('{language}', previewSettings.settings.language) : ''
+  return previewSettings.settings.davinci003.prompt ? previewSettings.settings.davinci003.prompt.replaceAll('{keyword}', previewSettings.settings.davinci003.keyword).replaceAll('{language}', previewSettings.settings.davinci003.language) : ''
 })
 
 useHead({
@@ -34,6 +34,9 @@ useHead({
   ],
 })
 
+const resetModel003 = () => {
+  previewSettings.$reset003()
+}
 const resx = ref('')
 const isLoading = ref(false)
 const loadEventSource = (id) => {
@@ -96,13 +99,13 @@ const saveAndExecute = function () {
       'Authorization': `Bearer ${previewSettings.settings.apiKey}`,
     },
     data: {
-      model: 'text-davinci-003',
+      model: previewSettings.settings.davinci003.model,
       prompt: realPrompt.value,
-      temperature: parseFloat(previewSettings.settings.temperature),
-      max_tokens: parseFloat(previewSettings.settings.max_tokens),
+      temperature: parseFloat(previewSettings.settings.davinci003.temperature),
+      max_tokens: parseFloat(previewSettings.settings.davinci003.max_tokens),
     },
   }).then((response) => {
-    previewSettings.settings.lastResult = response.data
+    previewSettings.settings.davinci003.lastResult = response.data
     isLoading.value = false
   })
 }
@@ -154,19 +157,19 @@ const visible = ref(false)
           </div>
         </div>
         <!-- <div class="flex flex-wrap ">
-                <div class="w-full px-3  md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-white text-lg font-bold mb-2"
-                    for="previewcontent"
-                  >
-                    PREVIEW CONTENT
-                  </label>
-                  <article
-                    class="prose prose-sm m-auto text-white text-justify"
-                    v-html="hasil"
-                  />
-                </div>
-              </div> -->
+                  <div class="w-full px-3  md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-white text-lg font-bold mb-2"
+                      for="previewcontent"
+                    >
+                      PREVIEW CONTENT
+                    </label>
+                    <article
+                      class="prose prose-sm m-auto text-white text-justify"
+                      v-html="hasil"
+                    />
+                  </div>
+                </div> -->
       </div>
     </div>
     <div class="right w-full lg:w-1/3  p-3">
@@ -193,11 +196,10 @@ const visible = ref(false)
                 </label>
                 <input
                   id="model"
-                  v-model="previewSettings.settings.model"
-                  class="appearance-none block w-full  text-white border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none "
+                  v-model="previewSettings.settings.davinci003.model"
+                  class="input input-bordered  w-full"
                   type="text"
-                  placeholder="Jane"
-                  disabled
+                  placeholder="gpt-3.5-turbo"
                 >
               </div>
               <div class="md:w-1/3 w-full px-3">
@@ -212,6 +214,20 @@ const visible = ref(false)
                   @click="saveAndExecute"
                 >
                   Save & Execute
+                </button>
+              </div>
+              <div class=" w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-last-name"
+                >
+                  ACTION
+                </label>
+                <button
+                  class="btn w-full "
+                  @click="resetModel003"
+                >
+                  Reset
                 </button>
               </div>
             </div>
@@ -242,7 +258,7 @@ const visible = ref(false)
                 </label>
                 <input
                   id="keyword"
-                  v-model="previewSettings.settings.keyword"
+                  v-model="previewSettings.settings.davinci003.keyword"
                   class="input input-bordered  w-full"
                   type="text"
                   placeholder="Jane"
@@ -260,7 +276,7 @@ const visible = ref(false)
 
                 <textarea
                   id="comment"
-                  v-model="previewSettings.settings.prompt"
+                  v-model="previewSettings.settings.davinci003.prompt"
                   rows="10"
                   class="textarea textarea-bordered w-full"
                   placeholder="Masukkan Prompt"
@@ -281,7 +297,7 @@ const visible = ref(false)
                 </label>
                 <input
                   id="temperature"
-                  v-model="previewSettings.settings.temperature"
+                  v-model="previewSettings.settings.davinci003.temperature"
                   class="input input-bordered w-full"
                   type="text"
                 >
@@ -295,7 +311,7 @@ const visible = ref(false)
                 </label>
                 <input
                   id="max-tokens"
-                  v-model="previewSettings.settings.max_tokens"
+                  v-model="previewSettings.settings.davinci003.max_tokens"
                   class="input input-bordered w-full"
                   type="text"
                 >
@@ -307,16 +323,17 @@ const visible = ref(false)
                 >
                   Language
                 </label>
-                <div class="relative">
+                <div class=" w-full">
                   <select
                     id="language"
-                    v-model="previewSettings.settings.language"
-                    class="select select-bordered w-full"
+                    v-model="previewSettings.settings.davinci003.language"
+                    class="select select-bordered"
                   >
                     <option
                       v-for="(item, index) in languageList"
                       :key="index"
                       :value="item.name"
+                      :selected="item.name === previewSettings.settings.davinci003.language"
                     >
                       {{ item.native_name }}
                     </option>
@@ -334,7 +351,7 @@ const visible = ref(false)
 <style lang="scss" scoped></style>
 
 <route lang="yaml">
-name: dashboard-preview
+name: reinsaigc-index
 meta:
   layout: dashboard
 </route>

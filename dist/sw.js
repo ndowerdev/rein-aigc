@@ -78,32 +78,38 @@ define(['./workbox-01d9f47c'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "assets/_...all_-07ddda23.js",
+    "url": "assets/_...all_-73d673a2.js",
     "revision": null
   }, {
-    "url": "assets/404-70c98978.js",
+    "url": "assets/404-cba06f09.js",
     "revision": null
   }, {
-    "url": "assets/app-6f204633.js",
+    "url": "assets/app-90ba482e.js",
     "revision": null
   }, {
-    "url": "assets/dashboard-f473fd28.js",
+    "url": "assets/dashboard-8897da9d.js",
     "revision": null
   }, {
-    "url": "assets/home-1eb56394.js",
+    "url": "assets/home-b9994317.js",
     "revision": null
   }, {
-    "url": "assets/index-0dd815f9.css",
+    "url": "assets/index-9c490437.css",
     "revision": null
   }, {
-    "url": "assets/virtual_pwa-register-16dae035.js",
+    "url": "assets/turbo-6ac7dec7.js",
+    "revision": null
+  }, {
+    "url": "assets/virtual_pwa-register-b0802a40.js",
     "revision": null
   }, {
     "url": "assets/workbox-window.prod.es5-295a6886.js",
     "revision": null
   }, {
     "url": "index.html",
-    "revision": "8d25510819fd8e170b4c7bd872a957f3"
+    "revision": "fcee0c8956bfb34306d1e3a8798ff0f4"
+  }, {
+    "url": "turbo.html",
+    "revision": "54ad40d45dc131df6e92783e5355c60d"
   }, {
     "url": "favicon.svg",
     "revision": "20abca606d1a2d69bb6f830f502d24e7"

@@ -1,24 +1,13 @@
 const NavMenus = [
   {
-    name: 'Dashboard',
-    routeName: 'dashboard',
+    name: 'ChatGPT Turbo',
+    routeName: 'openai-turbo',
   },
   {
-    name: 'API Key',
-    routeName: 'dashboard-api',
+    name: 'Davinci 003',
+    routeName: 'reinsaigc-index',
   },
-  {
-    name: 'Preview',
-    routeName: 'dashboard-preview',
-  },
-  {
-    name: 'Projects',
-    routeName: 'dashboard-projects',
-  },
-  {
-    name: 'Stream',
-    routeName: 'dashboard-stream',
-  },
+
   // {
   //   name: 'Project',
   //   route: '/dash',
