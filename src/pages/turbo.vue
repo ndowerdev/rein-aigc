@@ -76,6 +76,7 @@ const formMessage = ref(previewSettings.settings.gptTurbo.messages.map((item) =>
     content: item.content.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language),
   }
 }))
+
 const saveAndExecute = function () {
   isLoading.value = true
 
@@ -116,6 +117,19 @@ watch(
 
   { deep: true },
 )
+watch(
+  () => previewSettings.settings.gptTurbo.keyword, (newVal, oldVal) => {
+    // ip address input validation
+    formMessage.value = previewSettings.settings.gptTurbo.messages.map((item) => {
+      return {
+        role: item.role,
+        content: item.content.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language),
+      }
+    })
+  },
+
+  { deep: true },
+)
 </script>
 
 <template>
@@ -125,35 +139,13 @@ watch(
   </h2>
   <div
     ref="formContainer"
-    class="flex lg:flex-row-reverse flex-col-reverse  "
+    class="flex lg:flex-row flex-col  "
   >
-    <div class="left w-full lg:w-1/2 text-white bg-leftcolor p-3 ">
-      <div class="w-full ">
-        <div class="flex flex-wrap ">
-          <div class="w-full px-3  md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-white text-lg font-bold mb-2"
-              for="preview-html"
-            >
-              PREVIEW HTML
-            </label>
-            <textarea
-              id="preview-html"
-              v-model="hasil"
-              rows="30"
-              class="textarea textarea-primary w-full "
-              placeholder="Loading..."
-              disabled
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="right w-full lg:w-1/2 p-3">
+    <div class="right w-full lg:w-1/3 p-3">
       <div class="w-full max-w-xl p-3 m-auto">
-        <div class="collapse collapse-open collapse-arrow border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse  collapse-arrow border border-base-300 bg-base-100 rounded-box">
           <input type="checkbox">
-          <div class="collapse-title text-xl font-medium">
+          <div class="collapse-title text-xl font-medium" @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen">
             SETTINGS
           </div>
 
@@ -194,7 +186,7 @@ watch(
               <div class=" w-1/2 px-3">
                 <button
                   class="btn w-full btn-warning "
-                  @click="previewSettings.$reset003()"
+                  @click="previewSettings.$resetTurbo()"
                 >
                   🔄️ Reset
                 </button>
@@ -273,6 +265,44 @@ watch(
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div
+          :class="{ 'collapse-open': previewSettings.settings.isSettingBackupOpen === true }"
+          class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-3"
+        >
+          <input type="checkbox" class="peer" @click="previewSettings.settings.isSettingBackupOpen = !previewSettings.settings.isSettingBackupOpen">
+          <div class="collapse-title text-xl font-medium">
+            SETTINGS BACKUP
+          </div>
+
+          <div class="collapse-content">
+            <Divider title="API Settings" />
+            <div class="flex flex-wrap -mx-3 m-3" />
+            <TurboSettings />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="left w-full lg:w-2/3 text-white bg-leftcolor p-3 ">
+      <div class="w-full ">
+        <div class="flex flex-wrap ">
+          <div class="w-full px-3  md:mb-0">
+            <label
+              class="block uppercase tracking-wide text-white text-lg font-bold mb-2"
+              for="preview-html"
+            >
+              PREVIEW HTML
+            </label>
+            <textarea
+              id="preview-html"
+              v-model="hasil"
+              rows="30"
+              class="textarea textarea-primary w-full "
+              placeholder="Loading..."
+              disabled
+            />
           </div>
         </div>
       </div>

@@ -11,6 +11,8 @@ declare module '@vue/runtime-core' {
     InputText: typeof import('./components/InputText.vue')['default']
     ModalError: typeof import('./components/ModalError.vue')['default']
     ModalProjectInput: typeof import('./components/ModalProjectInput.vue')['default']
+    ModalSettingsBackup: typeof import('./components/ModalSettingsBackup.vue')['default']
+    ModalSettingsRestore: typeof import('./components/ModalSettingsRestore.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TableProjectLists: typeof import('./components/TableProjectLists.vue')['default']
@@ -18,5 +20,6 @@ declare module '@vue/runtime-core' {
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
     TheNavbar: typeof import('./components/TheNavbar.vue')['default']
+    TurboSettings: typeof import('./components/TurboSettings.vue')['default']
   }
 }
