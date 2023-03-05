@@ -84,6 +84,7 @@ const saveAndExecute = function () {
 
   axios({
     method: 'post',
+    timeout: 600000,
     url: 'https://api.openai.com/v1/chat/completions',
     headers: {
       'Content-Type': 'application/json',
