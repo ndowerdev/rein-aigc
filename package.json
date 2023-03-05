@@ -4,7 +4,7 @@
   "packageManager": "pnpm@7.17.1",
   "scripts": {
     "build": "vite-ssg build",
-    "dev": "vite --port 3334 --open",
+    "dev": "vite --port 3334 --host 192.168.100.173 --open",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
@@ -33,6 +33,7 @@
     "postcss": "^8.4.21",
     "sass": "^1.58.3",
     "sweetalert2": "^11.7.2",
+    "tailwind-editor": "^0.2.2",
     "tailwindcss": "^3.2.7",
     "vue": "^3.2.45",
     "vue-demi": "^0.13.11",

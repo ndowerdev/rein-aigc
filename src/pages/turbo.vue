@@ -24,7 +24,7 @@ const newMessage = ref({
   content: '',
 })
 useHead({
-  title: 'ReinAIGC - OpenAI Content Generator - ReinAIGC',
+  title: 'REIN AIGC - OpenAI Content Generator Online',
   meta: [
     { name: 'description', content: 'Generate AI Content with custom prompt using your own OpenAI API Key' },
 
@@ -134,16 +134,17 @@ watch(
 
 <template>
   <ModalError v-if="isLoading === true" />
-  <h2 class="text-xl text-center m-3 font-bold text-green-300">
+  <h2 class="text-xl text-center m-5 font-bold text-green-300">
     REIN AIGC - OpenAI Content Generator Online
   </h2>
   <div
     ref="formContainer"
-    class="flex lg:flex-row flex-col  "
+    class="flex lg:flex-row flex-col  gap-3"
   >
-    <div class="right w-full lg:w-1/3 p-3">
-      <div class="w-full max-w-xl p-3 m-auto">
-        <div class="collapse  collapse-arrow border border-base-300 bg-base-100 rounded-box" :class="{ 'collapse-open': previewSettings.settings.isSettingOpen === true }">
+    <div class="right w-full lg:w-1/3  ">
+      <div class="w-full max-w-xl m-auto ">
+        <!-- collapse1 -->
+        <div class="collapse  collapse-arrow border border-neutral bg-neutral " :class="{ 'collapse-open': previewSettings.settings.isSettingOpen === true, 'collapse-close': previewSettings.settings.isSettingOpen === false }">
           <input type="checkbox" @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen">
           <div class="collapse-title text-xl font-medium">
             SETTINGS
@@ -160,6 +161,8 @@ watch(
                   type="text"
                   placeholder="Jane"
                 >
+
+                <a href="https://www.facebook.com/rendrian.g.arma/" class="btn btn-outline mt-3  w-full" target="_blank">$120 API Limit IDR 20K ONLY!</a>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 m-3">
@@ -180,7 +183,7 @@ watch(
                   class="btn w-full btn-success "
                   @click="saveAndExecute"
                 >
-                  ▶️ Save & Execute
+                  ▶️ Execute
                 </button>
               </div>
               <div class=" w-1/2 px-3">
@@ -255,7 +258,7 @@ watch(
                   type="text"
                   placeholder="Content"
                   class="textarea textarea-bordered w-full"
-                  rows="5"
+                  rows="3"
                 />
                 <button
                   class="btn w-full btn-outline btn-warning btn-sm"
@@ -267,10 +270,11 @@ watch(
             </div>
           </div>
         </div>
+        <!-- collapse2 -->
 
         <div
           :class="{ 'collapse-open': previewSettings.settings.isSettingBackupOpen === true }"
-          class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-3"
+          class="collapse  collapse-arrow border border-neutral bg-neutral mt-3"
         >
           <input type="checkbox" class="peer" @click="previewSettings.settings.isSettingBackupOpen = !previewSettings.settings.isSettingBackupOpen">
           <div class="collapse-title text-xl font-medium">
@@ -285,7 +289,7 @@ watch(
         </div>
       </div>
     </div>
-    <div class="left w-full lg:w-2/3 text-white bg-leftcolor p-3 ">
+    <div class="left w-full lg:w-2/3 bg-neutral border-neutral p-2 ">
       <div class="w-full ">
         <div class="flex flex-wrap ">
           <div class="w-full px-3  md:mb-0">
@@ -295,13 +299,11 @@ watch(
             >
               PREVIEW HTML
             </label>
+
             <textarea
-              id="preview-html"
               v-model="hasil"
-              rows="30"
-              class="textarea textarea-primary w-full "
+              class="textarea textarea-bordered textarea-md w-full "
               placeholder="Loading..."
-              disabled
             />
           </div>
         </div>

@@ -37,6 +37,7 @@ specifiers:
   sass: ^1.58.3
   shiki: ^0.12.1
   sweetalert2: ^11.7.2
+  tailwind-editor: ^0.2.2
   tailwindcss: ^3.2.7
   taze: ^0.8.5
   typescript: ^4.9.4
@@ -84,6 +85,7 @@ dependencies:
   postcss: 8.4.21
   sass: 1.58.3
   sweetalert2: 11.7.2
+  tailwind-editor: 0.2.2
   tailwindcss: 3.2.7_postcss@8.4.21
   vue: 3.2.45
   vue-demi: 0.13.11_vue@3.2.45
@@ -8645,6 +8647,10 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.0
     dev: true
+
+  /tailwind-editor/0.2.2:
+    resolution: {integrity: sha512-t+LHpMQ6ZHVxfXuLb94gHmU6u80+8yyFvJK+K4aQMAhvqNRukl+wfPJstIQpbpmxt/ihYntULifJWsV4ir0phg==}
+    dev: false
 
   /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}

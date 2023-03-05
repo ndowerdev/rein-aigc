@@ -25,7 +25,7 @@ const downloadSettings = () => {
 
 <template>
   <div id="modal-open" class="m-auto  text-center fixed bg-gray top-0 left-0 w-full h-full flex items-center justify-center backdrop-filter backdrop-blur-[20px] overscroll-auto">
-    <div class="bg-white w-full lg:w-1/3 rounded-lg shadow-lg p-6 ackdrop-filter backdrop-blur-[20px]">
+    <div class="bg-white w-full lg:w-2/3 rounded-lg shadow-lg p-6 ackdrop-filter backdrop-blur-[20px]">
       <h2 class="text-lg font-bold mb-4 text-center text-black">
         SETTING BACKUP
       </h2>

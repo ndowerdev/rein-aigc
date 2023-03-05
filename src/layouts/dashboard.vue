@@ -7,7 +7,7 @@ const dropdownOpen = ref(false)
 
 <template>
   <main class="">
-    <div class="w-full lg:w-2/3 m-auto h-screen">
+    <div class="w-full  xl:w-2/3  m-auto h-screen">
       <TheNavbar />
       <div />
       <RouterView />

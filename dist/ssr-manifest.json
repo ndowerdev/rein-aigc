@@ -1,60 +1,60 @@
 {
-  "src/layouts/home.vue": [
-    "/assets/home-78d2e49b.js"
+  "../../../@vite-plugin-pwa/virtual:pwa-register": [
+    "/assets/virtual_pwa-register-a051f8b2.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_-2929a3ce.js"
+    "/assets/_...all_-8505916e.js"
   ],
-  "../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/assets/virtual_pwa-register-5e77e332.js"
-  ],
-  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/404-bd0aa1a7.js"
-  ],
-  "src/layouts/404.vue": [
-    "/assets/404-bd0aa1a7.js"
+  "src/layouts/home.vue": [
+    "/assets/home-c4c06a97.js"
   ],
   "src/composables/menus.ts": [
-    "/assets/dashboard-3d026b66.js"
+    "/assets/dashboard-de748ddc.js"
   ],
   "src/components/TheNavbar.vue": [
-    "/assets/dashboard-3d026b66.js"
+    "/assets/dashboard-de748ddc.js"
   ],
   "src/layouts/dashboard.vue": [
-    "/assets/dashboard-3d026b66.js"
+    "/assets/dashboard-de748ddc.js"
+  ],
+  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/404-e95933b0.js"
+  ],
+  "src/layouts/404.vue": [
+    "/assets/404-e95933b0.js"
   ],
   "node_modules/.pnpm/workbox-window@6.5.4/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/workbox-window.prod.es5-295a6886.js"
   ],
   "src/composables/helper.ts": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "\u0000D:/laragon/www/openai-prompt-tester/node_modules/.pnpm/file-saver@2.0.5/node_modules/file-saver/dist/FileSaver.min.js?commonjs-module": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "node_modules/.pnpm/file-saver@2.0.5/node_modules/file-saver/dist/FileSaver.min.js": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "src/components/ModalSettingsRestore.vue": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "node_modules/.pnpm/@vueuse+shared@9.11.0_vue@3.2.45/node_modules/@vueuse/shared/index.mjs": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "node_modules/.pnpm/@vueuse+core@9.11.0_vue@3.2.45/node_modules/@vueuse/core/index.mjs": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "src/components/ModalSettingsBackup.vue": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "src/components/TurboSettings.vue": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "src/components/Divider.vue": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "src/pages/turbo.vue": [
-    "/assets/turbo-7524b968.js"
+    "/assets/turbo-fb6355ec.js"
   ],
   "\u0000vite/modulepreload-polyfill": [],
   "locales/ar.yml": [],
@@ -112,6 +112,7 @@
   "node_modules/.pnpm/vue3-clipboard@1.0.0_vue@3.2.45/node_modules/vue3-clipboard/dist/vue3-clipboard-es.js": [],
   "src/App.vue?vue&type=script&setup=true&lang.ts": [],
   "src/App.vue": [],
+  "../../../loading.gif": [],
   "src/components/ModalError.vue": [],
   "src/composables/array.ts": [],
   "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/bind.js": [],
