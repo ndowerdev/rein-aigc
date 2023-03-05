@@ -7,7 +7,7 @@ import { EventSourcePolyfill, NativeEventSource } from 'event-source-polyfill'
 // Import stylesheet
 // import 'vue-loading-overlay/dist/vue-loading.css'
 
-import { usePreviewSettingsStore } from '~/stores/openai-preview-settings'
+// import { usePreviewSettingsStore } from '~/stores/openai-preview-settings'
 
 const fullPage = ref(true)
 const previewSettings = usePreviewSettingsStore()
@@ -143,9 +143,9 @@ watch(
   >
     <div class="right w-full lg:w-1/3 p-3">
       <div class="w-full max-w-xl p-3 m-auto">
-        <div class="collapse  collapse-arrow border border-base-300 bg-base-100 rounded-box">
-          <input type="checkbox">
-          <div class="collapse-title text-xl font-medium" @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen">
+        <div class="collapse  collapse-arrow border border-base-300 bg-base-100 rounded-box" :class="{ 'collapse-open': previewSettings.settings.isSettingOpen === true }">
+          <input type="checkbox" @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen">
+          <div class="collapse-title text-xl font-medium">
             SETTINGS
           </div>
 

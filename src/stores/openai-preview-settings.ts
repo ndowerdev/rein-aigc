@@ -41,20 +41,32 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
 
   })
 
-  if (typeof window !== 'undefined') {
-    if (localStorage.getItem('ndx-openapi-chat-settings'))
-      settings.value = JSON.parse(localStorage.getItem('ndx-openapi-chat-settings') || '{}')
+  // if (typeof window !== 'undefined') {
+  //   if (localStorage.getItem('ndx-openapi-chat-settings')) {
+  //     console.log(true)
+  //     localStorage.setItem('ndx-openapi-chat-settings', JSON.stringify(settings.value))
+  //   }
+  //   else {
+  //     console.log(false)
+  //     settings.value = JSON.parse(localStorage.getItem('ndx-openapi-chat-settings') || '{}')
+  //   }
+  // }
+  // watch(settings,
+  //   (settingsVal) => {
+  //     console.log('changed')
 
-    else
-      localStorage.setItem('ndx-openapi-chat-settings', JSON.stringify(settings.value))
+  //     // useLocalStorage('ndx-openapi-chat-settings', settingsVal)
+  //     localStorage.setItem('ndx-openapi-chat-settings', JSON.stringify(settingsVal))
+  //   },
+  //   { deep: true },
+  // )
 
-    watch(settings,
-      (settingsVal) => {
-        localStorage.setItem('ndx-openapi-chat-settings', JSON.stringify(settingsVal))
-      },
-      { deep: true },
-    )
-  }
+  // watch(() => settings.value, (state) => {
+  //   console.log('changed')
+  //   useLocalStorage('ndx-openapi-chat-settings', settings.value)
+  //   // localStorage.setItem('ndx-openapi-chat-settings', JSON.stringify(state))
+  // })
+
   function $reset003() {
     Swal.fire({
       title: 'Reset Davinci003 Settings?',

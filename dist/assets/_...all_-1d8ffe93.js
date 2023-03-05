@@ -1,1 +1,0 @@
-import{f as c,o as t,c as a,G as e}from"./app-7d18a98f.js";const o={};function n(r,_){return t(),a("div",null," X ")}typeof e=="function"&&e(o);const s=c(o,[["render",n],["__file","D:/laragon/www/openai-prompt-tester/src/pages/[...all].vue"]]);export{s as default};
