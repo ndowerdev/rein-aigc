@@ -305,6 +305,7 @@ watch(
               v-model="hasil"
               class="textarea textarea-bordered textarea-md w-full "
               placeholder="Loading..."
+              rows="20"
             />
           </div>
         </div>
