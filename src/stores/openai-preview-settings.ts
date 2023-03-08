@@ -31,10 +31,12 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
       logprobs: null,
       keyword: '',
       messages: [
-        { role: 'system', content: 'You are a helpful assistant.' },
-        { role: 'user', content: 'Who won the world series in 2020?' },
-        { role: 'assistant', content: 'The Los Angeles Dodgers won the World Series in 2020.' },
-        { role: 'user', content: 'Where was it played?' },
+
+        {
+          role: 'user', content: `The article should include Creative Title (should be in H1 Heading), SEO meta description, Introduction, headings (Should be h2 heading) and format it as HTML Blog Post, sub headings (h3, h4,h5,h6 headings), bullet points or Numbered list if needed, frequently asked questions and conclusion.
+        After the title insert image using this format "https://tse1.mm.bing.net/th?q={app_name}".`
+        },
+
       ],
       lastResult: '',
 
@@ -123,10 +125,10 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
           stream: false,
           logprobs: null,
           messages: [
-            { role: 'system', content: 'You are a helpful assistant.' },
-            { role: 'user', content: 'Who won the world series in 2020?' },
-            { role: 'assistant', content: 'The Los Angeles Dodgers won the World Series in 2020.' },
-            { role: 'user', content: 'Where was it played?' },
+            {
+              role: 'user', content: `The article should include Creative Title (should be in H1 Heading), SEO meta description, Introduction, headings (Should be h2 heading) and format it as HTML Blog Post, sub headings (h3, h4,h5,h6 headings), bullet points or Numbered list if needed, frequently asked questions and conclusion.
+            After the title insert image using this format "https://tse1.mm.bing.net/th?q={app_name}".`
+            },
           ],
           lastResult: '',
         }

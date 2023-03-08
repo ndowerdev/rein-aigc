@@ -2,7 +2,6 @@
   "\u0000D:/laragon/www/openai-prompt-tester/node_modules/event-source-polyfill/src/eventsource.js?commonjs-module": [
   ],
   "\u0000D:/laragon/www/openai-prompt-tester/node_modules/file-saver/dist/FileSaver.min.js?commonjs-module": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "\u0000D:/laragon/www/openai-prompt-tester/node_modules/nprogress/nprogress.js?commonjs-module": [
   ],
@@ -23,7 +22,7 @@
   "../../../@vite-plugin-pages/route-block": [
   ],
   "../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/assets/virtual_pwa-register-f5aacd97.js"
+    "/assets/virtual_pwa-register-096cba56.js"
   ],
   "../../../@vite-plugin-vue-layouts/generated-layouts": [
   ],
@@ -90,12 +89,10 @@
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
   ],
   "node_modules/@vueuse/core/index.mjs": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "node_modules/@vueuse/head/dist/index.mjs": [
   ],
   "node_modules/@vueuse/shared/index.mjs": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "node_modules/axios/lib/adapters/adapters.js": [
   ],
@@ -182,7 +179,6 @@
   "node_modules/event-source-polyfill/src/eventsource.js": [
   ],
   "node_modules/file-saver/dist/FileSaver.min.js": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "node_modules/hookable/dist/index.mjs": [
   ],
@@ -222,45 +218,40 @@
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
   "src/components/Divider.vue": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "src/components/ModalError.vue": [
   ],
   "src/components/ModalSettingsBackup.vue": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "src/components/ModalSettingsRestore.vue": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "src/components/TheNavbar.vue": [
-    "/assets/dashboard-508b2227.js"
+    "/assets/dashboard-9c1d9807.js"
   ],
   "src/components/TurboSettings.vue": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "src/composables/array.ts": [
   ],
   "src/composables/database.ts": [
   ],
   "src/composables/helper.ts": [
-    "/assets/turbo-f1a00ae7.js"
   ],
   "src/composables/menus.ts": [
-    "/assets/dashboard-508b2227.js"
+    "/assets/dashboard-9c1d9807.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404-d2f20be3.js"
+    "/assets/404-ab1241fa.js"
   ],
   "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/404-d2f20be3.js"
+    "/assets/404-ab1241fa.js"
   ],
   "src/layouts/dashboard.vue": [
-    "/assets/dashboard-508b2227.js"
+    "/assets/dashboard-9c1d9807.js"
   ],
   "src/layouts/default.vue": [
   ],
   "src/layouts/home.vue": [
-    "/assets/home-2f281a02.js"
+    "/assets/home-3197620e.js"
   ],
   "src/main.ts": [
   ],
@@ -275,12 +266,12 @@
   "src/modules/router.ts": [
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_-b6692ada.js"
+    "/assets/_...all_-d7b233c2.js"
   ],
   "src/pages/index.vue": [
   ],
-  "src/pages/turbo.vue": [
-    "/assets/turbo-f1a00ae7.js"
+  "src/pages/openai-davinci-003-prompt-tester.vue": [
+    "/assets/openai-davinci-003-prompt-tester-4a289b4b.js"
   ],
   "src/stores/openai-preview-settings.ts": [
   ],

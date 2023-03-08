@@ -56,7 +56,7 @@
     </div>
     <div class="navbar-end">
       <a
-        class="btn btn-ghost" href="https://saweria.co/ndower" target="_blank
+        class="btn btn-ghost font-bold bg-base-300" href="https://saweria.co/ndower" target="_blank
       "
       >DONATE</a>
     </div>
