@@ -21,6 +21,7 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
       lastResult: '',
     },
     gptTurbo: {
+      language: 'Indonesian',
       model: 'gpt-3.5-turbo',
       temperature: 0.7,
       max_tokens: 2000,
@@ -113,6 +114,7 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
       if (result.isConfirmed) {
         settings.value.gptTurbo = {
           model: 'gpt-3.5-turbo',
+          language: 'Indonesian',
           temperature: 0.7,
           max_tokens: 2000,
           keyword: '',

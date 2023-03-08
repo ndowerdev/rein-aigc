@@ -1,171 +1,289 @@
 {
-  "src/pages/[...all].vue": [
-    "/assets/_...all_-15cdc8f1.js"
+  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/event-source-polyfill/src/eventsource.js?commonjs-module": [
   ],
-  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/404-192e2d0b.js"
+  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/file-saver/dist/FileSaver.min.js?commonjs-module": [
+    "/assets/turbo-f1a00ae7.js"
   ],
-  "src/layouts/404.vue": [
-    "/assets/404-192e2d0b.js"
+  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/nprogress/nprogress.js?commonjs-module": [
   ],
-  "src/layouts/home.vue": [
-    "/assets/home-93dfffe8.js"
+  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/sweetalert2/dist/sweetalert2.all.js?commonjs-module": [
+  ],
+  "\u0000commonjsHelpers.js": [
+  ],
+  "\u0000plugin-vue:export-helper": [
+  ],
+  "\u0000virtual:vue-component-preview": [
+  ],
+  "\u0000vite/modulepreload-polyfill": [
+  ],
+  "\u0000vite/preload-helper": [
+  ],
+  "../../../@vite-plugin-pages/generated-pages?id=~pages": [
+  ],
+  "../../../@vite-plugin-pages/route-block": [
   ],
   "../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/assets/virtual_pwa-register-717c51aa.js"
+    "/assets/virtual_pwa-register-f5aacd97.js"
   ],
-  "src/composables/menus.ts": [
-    "/assets/dashboard-67847e6d.js"
+  "../../../@vite-plugin-vue-layouts/generated-layouts": [
   ],
-  "src/components/TheNavbar.vue": [
-    "/assets/dashboard-67847e6d.js"
+  "../../../loading.gif": [
   ],
-  "src/layouts/dashboard.vue": [
-    "/assets/dashboard-67847e6d.js"
+  "index.html": [
   ],
-  "node_modules/.pnpm/workbox-window@6.5.4/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
+  "locales/ar.yml": [
+  ],
+  "locales/de.yml": [
+  ],
+  "locales/en.yml": [
+  ],
+  "locales/es.yml": [
+  ],
+  "locales/fr.yml": [
+  ],
+  "locales/id.yml": [
+  ],
+  "locales/it.yml": [
+  ],
+  "locales/ja.yml": [
+  ],
+  "locales/ka.yml": [
+  ],
+  "locales/ko.yml": [
+  ],
+  "locales/pl.yml": [
+  ],
+  "locales/pt-BR.yml": [
+  ],
+  "locales/ru.yml": [
+  ],
+  "locales/tr.yml": [
+  ],
+  "locales/uk.yml": [
+  ],
+  "locales/vi.yml": [
+  ],
+  "locales/zh-CN.yml": [
+  ],
+  "node_modules/@unhead/dom/dist/index.mjs": [
+  ],
+  "node_modules/@unhead/shared/dist/index.mjs": [
+  ],
+  "node_modules/@unhead/vue/dist/shared/vue.3c82dacb.mjs": [
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/const.js": [
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/env.js": [
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/index.js": [
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/proxy.js": [
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/time.js": [
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+  ],
+  "node_modules/@vueuse/core/index.mjs": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "node_modules/@vueuse/head/dist/index.mjs": [
+  ],
+  "node_modules/@vueuse/shared/index.mjs": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "node_modules/axios/lib/adapters/adapters.js": [
+  ],
+  "node_modules/axios/lib/adapters/xhr.js": [
+  ],
+  "node_modules/axios/lib/axios.js": [
+  ],
+  "node_modules/axios/lib/cancel/CancelToken.js": [
+  ],
+  "node_modules/axios/lib/cancel/CanceledError.js": [
+  ],
+  "node_modules/axios/lib/cancel/isCancel.js": [
+  ],
+  "node_modules/axios/lib/core/Axios.js": [
+  ],
+  "node_modules/axios/lib/core/AxiosError.js": [
+  ],
+  "node_modules/axios/lib/core/AxiosHeaders.js": [
+  ],
+  "node_modules/axios/lib/core/InterceptorManager.js": [
+  ],
+  "node_modules/axios/lib/core/buildFullPath.js": [
+  ],
+  "node_modules/axios/lib/core/dispatchRequest.js": [
+  ],
+  "node_modules/axios/lib/core/mergeConfig.js": [
+  ],
+  "node_modules/axios/lib/core/settle.js": [
+  ],
+  "node_modules/axios/lib/core/transformData.js": [
+  ],
+  "node_modules/axios/lib/defaults/index.js": [
+  ],
+  "node_modules/axios/lib/defaults/transitional.js": [
+  ],
+  "node_modules/axios/lib/env/data.js": [
+  ],
+  "node_modules/axios/lib/helpers/AxiosURLSearchParams.js": [
+  ],
+  "node_modules/axios/lib/helpers/HttpStatusCode.js": [
+  ],
+  "node_modules/axios/lib/helpers/bind.js": [
+  ],
+  "node_modules/axios/lib/helpers/buildURL.js": [
+  ],
+  "node_modules/axios/lib/helpers/combineURLs.js": [
+  ],
+  "node_modules/axios/lib/helpers/cookies.js": [
+  ],
+  "node_modules/axios/lib/helpers/formDataToJSON.js": [
+  ],
+  "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
+  ],
+  "node_modules/axios/lib/helpers/isAxiosError.js": [
+  ],
+  "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
+  ],
+  "node_modules/axios/lib/helpers/null.js": [
+  ],
+  "node_modules/axios/lib/helpers/parseHeaders.js": [
+  ],
+  "node_modules/axios/lib/helpers/parseProtocol.js": [
+  ],
+  "node_modules/axios/lib/helpers/speedometer.js": [
+  ],
+  "node_modules/axios/lib/helpers/spread.js": [
+  ],
+  "node_modules/axios/lib/helpers/toFormData.js": [
+  ],
+  "node_modules/axios/lib/helpers/toURLEncodedForm.js": [
+  ],
+  "node_modules/axios/lib/helpers/validator.js": [
+  ],
+  "node_modules/axios/lib/platform/browser/classes/Blob.js": [
+  ],
+  "node_modules/axios/lib/platform/browser/classes/FormData.js": [
+  ],
+  "node_modules/axios/lib/platform/browser/classes/URLSearchParams.js": [
+  ],
+  "node_modules/axios/lib/platform/browser/index.js": [
+  ],
+  "node_modules/axios/lib/utils.js": [
+  ],
+  "node_modules/event-source-polyfill/src/eventsource.js": [
+  ],
+  "node_modules/file-saver/dist/FileSaver.min.js": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "node_modules/hookable/dist/index.mjs": [
+  ],
+  "node_modules/nprogress/nprogress.js": [
+  ],
+  "node_modules/pinia/dist/pinia.mjs": [
+  ],
+  "node_modules/pocketbase/dist/pocketbase.es.mjs": [
+  ],
+  "node_modules/sweetalert2/dist/sweetalert2.all.js": [
+  ],
+  "node_modules/sweetalert2/dist/sweetalert2.min.css": [
+  ],
+  "node_modules/unhead/dist/index.mjs": [
+  ],
+  "node_modules/vite-ssg/dist/index.mjs": [
+  ],
+  "node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
+  ],
+  "node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [
+  ],
+  "node_modules/vue-demi/lib/index.mjs": [
+  ],
+  "node_modules/vue-loading-overlay/dist/css/index.css": [
+  ],
+  "node_modules/vue-router/dist/vue-router.mjs": [
+  ],
+  "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+  ],
+  "node_modules/vue3-clipboard/dist/vue3-clipboard-es.js": [
+  ],
+  "node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/workbox-window.prod.es5-295a6886.js"
   ],
-  "src/composables/helper.ts": [
-    "/assets/turbo-28361e84.js"
+  "src/App.vue": [
   ],
-  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/.pnpm/file-saver@2.0.5/node_modules/file-saver/dist/FileSaver.min.js?commonjs-module": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "node_modules/.pnpm/file-saver@2.0.5/node_modules/file-saver/dist/FileSaver.min.js": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "src/components/ModalSettingsRestore.vue": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "node_modules/.pnpm/@vueuse+shared@9.11.0_vue@3.2.45/node_modules/@vueuse/shared/index.mjs": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "node_modules/.pnpm/@vueuse+core@9.11.0_vue@3.2.45/node_modules/@vueuse/core/index.mjs": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "src/components/ModalSettingsBackup.vue": [
-    "/assets/turbo-28361e84.js"
-  ],
-  "src/components/TurboSettings.vue": [
-    "/assets/turbo-28361e84.js"
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
   "src/components/Divider.vue": [
-    "/assets/turbo-28361e84.js"
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "src/components/ModalError.vue": [
+  ],
+  "src/components/ModalSettingsBackup.vue": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "src/components/ModalSettingsRestore.vue": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "src/components/TheNavbar.vue": [
+    "/assets/dashboard-508b2227.js"
+  ],
+  "src/components/TurboSettings.vue": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "src/composables/array.ts": [
+  ],
+  "src/composables/database.ts": [
+  ],
+  "src/composables/helper.ts": [
+    "/assets/turbo-f1a00ae7.js"
+  ],
+  "src/composables/menus.ts": [
+    "/assets/dashboard-508b2227.js"
+  ],
+  "src/layouts/404.vue": [
+    "/assets/404-d2f20be3.js"
+  ],
+  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/404-d2f20be3.js"
+  ],
+  "src/layouts/dashboard.vue": [
+    "/assets/dashboard-508b2227.js"
+  ],
+  "src/layouts/default.vue": [
+  ],
+  "src/layouts/home.vue": [
+    "/assets/home-2f281a02.js"
+  ],
+  "src/main.ts": [
+  ],
+  "src/modules/i18n.ts": [
+  ],
+  "src/modules/nprogress.ts": [
+  ],
+  "src/modules/pinia.ts": [
+  ],
+  "src/modules/pwa.ts": [
+  ],
+  "src/modules/router.ts": [
+  ],
+  "src/pages/[...all].vue": [
+    "/assets/_...all_-b6692ada.js"
+  ],
+  "src/pages/index.vue": [
   ],
   "src/pages/turbo.vue": [
-    "/assets/turbo-28361e84.js"
+    "/assets/turbo-f1a00ae7.js"
   ],
-  "\u0000vite/modulepreload-polyfill": [],
-  "locales/ar.yml": [],
-  "locales/de.yml": [],
-  "locales/en.yml": [],
-  "locales/es.yml": [],
-  "locales/fr.yml": [],
-  "locales/id.yml": [],
-  "locales/it.yml": [],
-  "locales/ja.yml": [],
-  "locales/ka.yml": [],
-  "locales/ko.yml": [],
-  "locales/pl.yml": [],
-  "locales/pt-BR.yml": [],
-  "locales/ru.yml": [],
-  "locales/tr.yml": [],
-  "locales/uk.yml": [],
-  "locales/vi.yml": [],
-  "locales/zh-CN.yml": [],
-  "src/modules/i18n.ts": [],
-  "\u0000commonjsHelpers.js": [],
-  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [],
-  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [],
-  "src/modules/nprogress.ts": [],
-  "node_modules/.pnpm/@vue+shared@3.2.45/node_modules/@vue/shared/dist/shared.esm-bundler.js": [],
-  "node_modules/.pnpm/@vue+reactivity@3.2.45/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [],
-  "node_modules/.pnpm/@vue+runtime-core@3.2.45/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [],
-  "node_modules/.pnpm/@vue+runtime-dom@3.2.45/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [],
-  "node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js": [],
-  "node_modules/.pnpm/vue-demi@0.13.11_vue@3.2.45/node_modules/vue-demi/lib/index.mjs": [],
-  "node_modules/.pnpm/@vue+devtools-api@6.4.5/node_modules/@vue/devtools-api/lib/esm/env.js": [],
-  "node_modules/.pnpm/@vue+devtools-api@6.4.5/node_modules/@vue/devtools-api/lib/esm/const.js": [],
-  "node_modules/.pnpm/@vue+devtools-api@6.4.5/node_modules/@vue/devtools-api/lib/esm/time.js": [],
-  "node_modules/.pnpm/@vue+devtools-api@6.4.5/node_modules/@vue/devtools-api/lib/esm/proxy.js": [],
-  "node_modules/.pnpm/@vue+devtools-api@6.4.5/node_modules/@vue/devtools-api/lib/esm/index.js": [],
-  "node_modules/.pnpm/pinia@2.0.29_prq2uz4lho2pwp6irk4cfkrxwu/node_modules/pinia/dist/pinia.mjs": [],
-  "src/modules/pinia.ts": [],
-  "\u0000vite/preload-helper": [],
-  "src/modules/pwa.ts": [],
-  "node_modules/.pnpm/pocketbase@0.10.2/node_modules/pocketbase/dist/pocketbase.es.mjs": [],
-  "src/composables/database.ts": [],
-  "src/modules/router.ts": [],
-  "node_modules/.pnpm/vue-router@4.1.6_vue@3.2.45/node_modules/vue-router/dist/vue-router.mjs": [],
-  "node_modules/.pnpm/hookable@5.4.2/node_modules/hookable/dist/index.mjs": [],
-  "node_modules/.pnpm/@unhead+vue@1.0.13_vue@3.2.45/node_modules/@unhead/vue/dist/index.mjs": [],
-  "node_modules/.pnpm/@unhead+dom@1.0.13/node_modules/@unhead/dom/dist/index.mjs": [],
-  "node_modules/.pnpm/@vueuse+head@1.0.22_vue@3.2.45/node_modules/@vueuse/head/dist/index.mjs": [],
-  "node_modules/.pnpm/vite-ssg@0.22.1_taxab7htm3ndplav6c3d2ozfxa/node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [],
-  "node_modules/.pnpm/vite-ssg@0.22.1_taxab7htm3ndplav6c3d2ozfxa/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [],
-  "node_modules/.pnpm/vite-ssg@0.22.1_taxab7htm3ndplav6c3d2ozfxa/node_modules/vite-ssg/dist/index.mjs": [],
-  "\u0000plugin-vue:export-helper": [],
-  "src/layouts/default.vue": [],
-  "../../../@vite-plugin-vue-layouts/generated-layouts": [],
-  "\u0000virtual:vue-component-preview": [],
-  "node_modules/.pnpm/vue3-clipboard@1.0.0_vue@3.2.45/node_modules/vue3-clipboard/dist/vue3-clipboard-es.js": [],
-  "src/App.vue?vue&type=script&setup=true&lang.ts": [],
-  "src/App.vue": [],
-  "../../../loading.gif": [],
-  "src/components/ModalError.vue": [],
-  "src/composables/array.ts": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/bind.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/utils.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/AxiosError.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/null.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/toFormData.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/AxiosURLSearchParams.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/buildURL.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/InterceptorManager.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/defaults/transitional.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/platform/browser/classes/URLSearchParams.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/platform/browser/classes/FormData.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/platform/browser/index.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/toURLEncodedForm.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/formDataToJSON.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/defaults/index.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/parseHeaders.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/AxiosHeaders.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/transformData.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/cancel/isCancel.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/cancel/CanceledError.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/settle.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/cookies.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/isAbsoluteURL.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/combineURLs.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/buildFullPath.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/isURLSameOrigin.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/parseProtocol.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/speedometer.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/adapters/xhr.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/adapters/adapters.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/dispatchRequest.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/mergeConfig.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/env/data.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/validator.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/core/Axios.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/cancel/CancelToken.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/spread.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/isAxiosError.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/helpers/HttpStatusCode.js": [],
-  "node_modules/.pnpm/axios@1.3.3/node_modules/axios/lib/axios.js": [],
-  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/.pnpm/event-source-polyfill@1.0.31/node_modules/event-source-polyfill/src/eventsource.js?commonjs-module": [],
-  "node_modules/.pnpm/event-source-polyfill@1.0.31/node_modules/event-source-polyfill/src/eventsource.js": [],
-  "\u0000D:/laragon/www/openai-prompt-tester/node_modules/.pnpm/sweetalert2@11.7.2/node_modules/sweetalert2/dist/sweetalert2.all.js?commonjs-module": [],
-  "node_modules/.pnpm/sweetalert2@11.7.2/node_modules/sweetalert2/dist/sweetalert2.all.js": [],
-  "src/stores/openai-preview-settings.ts": [],
-  "../../../@vite-plugin-pages/route-block": [],
-  "src/pages/index.vue": [],
-  "../../../@vite-plugin-pages/generated-pages?id=~pages": [],
-  "node_modules/.pnpm/vue-loading-overlay@6.0.3_vue@3.2.45/node_modules/vue-loading-overlay/dist/css/index.css": [],
-  "src/styles/main.css": [],
-  "node_modules/.pnpm/sweetalert2@11.7.2/node_modules/sweetalert2/dist/sweetalert2.min.css": [],
-  "src/main.ts": [],
-  "index.html": []
+  "src/stores/openai-preview-settings.ts": [
+  ],
+  "src/styles/main.css": [
+  ]
 }

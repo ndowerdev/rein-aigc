@@ -177,6 +177,25 @@ watch(
                 >
               </div>
             </div>
+            <div class="flex flex-wrap -mx-3 m-3">
+              <div class="w-full  px-3  md:mb-0">
+                <select
+                  id="language"
+                  v-model="previewSettings.settings.gptTurbo.language"
+                  class="select select-bordered  w-full"
+                >
+                  <option
+                    v-for="(item, index) in languageList"
+                    :key="index"
+                    :value="item.name"
+                    :selected="item.name === previewSettings.settings.davinci003.language"
+                  >
+                    {{ item.native_name }}
+                  </option>
+                </select>
+              </div>
+            </div>
+
             <Divider title="Action" />
             <div class="flex flex-wrap -mx-3">
               <div class=" w-1/2 px-3">
