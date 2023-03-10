@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Divider: typeof import('./components/Divider.vue')['default']
     InputText: typeof import('./components/InputText.vue')['default']
+    ModalEditPrompt: typeof import('./components/ModalEditPrompt.vue')['default']
     ModalError: typeof import('./components/ModalError.vue')['default']
     ModalProjectInput: typeof import('./components/ModalProjectInput.vue')['default']
     ModalSettingsBackup: typeof import('./components/ModalSettingsBackup.vue')['default']

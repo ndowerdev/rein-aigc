@@ -78,38 +78,44 @@ define(['./workbox-01d9f47c'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "assets/_...all_-d7b233c2.js",
+    "url": "assets/_...all_-a3e33ca1.js",
     "revision": null
   }, {
-    "url": "assets/404-ab1241fa.js",
+    "url": "assets/404-1cec686c.js",
     "revision": null
   }, {
-    "url": "assets/app-64104e41.js",
+    "url": "assets/app-746fd850.js",
     "revision": null
   }, {
-    "url": "assets/dashboard-9c1d9807.js",
+    "url": "assets/dashboard-341781cd.js",
     "revision": null
   }, {
-    "url": "assets/home-3197620e.js",
+    "url": "assets/home-62deca77.js",
     "revision": null
   }, {
-    "url": "assets/index-f535baff.css",
+    "url": "assets/index-902d2405.css",
     "revision": null
   }, {
-    "url": "assets/openai-davinci-003-prompt-tester-4a289b4b.js",
+    "url": "assets/openai-davinci-003-prompt-tester-04a23f7a.js",
     "revision": null
   }, {
-    "url": "assets/virtual_pwa-register-096cba56.js",
+    "url": "assets/prompt-manager-ec6bde25.js",
+    "revision": null
+  }, {
+    "url": "assets/virtual_pwa-register-ce15a868.js",
     "revision": null
   }, {
     "url": "assets/workbox-window.prod.es5-295a6886.js",
     "revision": null
   }, {
     "url": "index.html",
-    "revision": "21fbc1053e62ba9519309c1feefc9908"
+    "revision": "aaa568f55a465eb2ebeb97b8ee00473a"
   }, {
     "url": "openai-davinci-003-prompt-tester.html",
-    "revision": "1c6b3122f6fd35394729ebecb7c79857"
+    "revision": "7616940e9c9f6acf24479e59c2a32e32"
+  }, {
+    "url": "prompt-manager.html",
+    "revision": "444bbfd13ade9263e249cc4e7abd8aeb"
   }, {
     "url": "favicon.svg",
     "revision": "20abca606d1a2d69bb6f830f502d24e7"

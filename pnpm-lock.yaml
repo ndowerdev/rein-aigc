@@ -13,6 +13,7 @@ specifiers:
   '@vueup/vue-quill': ^1.1.0
   '@vueuse/core': ^9.11.0
   '@vueuse/head': ^1.0.22
+  '@vueuse/integrations': ^9.13.0
   autoprefixer: ^10.4.13
   axios: ^1.3.3
   critters: ^0.0.16
@@ -45,6 +46,7 @@ specifiers:
   unplugin-auto-import: ^0.12.1
   unplugin-vue-components: ^0.22.12
   unplugin-vue-macros: ^1.4.2
+  uuid: ^9.0.0
   vite: ^4.0.4
   vite-plugin-inspect: ^0.7.14
   vite-plugin-pages: ^0.28.0
@@ -71,6 +73,7 @@ dependencies:
   '@vueup/vue-quill': 1.1.1_vue@3.2.47
   '@vueuse/core': 9.13.0_vue@3.2.47
   '@vueuse/head': 1.1.19_vue@3.2.47
+  '@vueuse/integrations': 9.13.0_tvbhak4dhyk6qwhumplgte6jji
   autoprefixer: 10.4.13_postcss@8.4.21
   axios: 1.3.4
   daisyui: 2.51.3_gbtt6ss3tbiz4yjtvdr6fbrj44
@@ -87,6 +90,7 @@ dependencies:
   sweetalert2: 11.7.3
   tailwind-editor: 0.2.2
   tailwindcss: 3.2.7_postcss@8.4.21
+  uuid: 9.0.0
   vue: 3.2.47
   vue-demi: 0.13.11_vue@3.2.47
   vue-i18n: 9.2.2_vue@3.2.47
@@ -3357,6 +3361,54 @@ packages:
       '@unhead/ssr': 1.1.21
       '@unhead/vue': 1.1.21_vue@3.2.47
       vue: 3.2.47
+
+  /@vueuse/integrations/9.13.0_tvbhak4dhyk6qwhumplgte6jji:
+    resolution: {integrity: sha512-I1kX/tsfcvWWLZD7HZaP0LsSfchK13YxReLfharXhk72SFXp87doLbRaTfIF5w8m/gr/vPtcNyQPAXW7Ubpuww==}
+    peerDependencies:
+      async-validator: '*'
+      axios: '*'
+      change-case: '*'
+      drauu: '*'
+      focus-trap: '*'
+      fuse.js: '*'
+      idb-keyval: '*'
+      jwt-decode: '*'
+      nprogress: '*'
+      qrcode: '*'
+      universal-cookie: '*'
+    peerDependenciesMeta:
+      async-validator:
+        optional: true
+      axios:
+        optional: true
+      change-case:
+        optional: true
+      drauu:
+        optional: true
+      focus-trap:
+        optional: true
+      fuse.js:
+        optional: true
+      idb-keyval:
+        optional: true
+      jwt-decode:
+        optional: true
+      nprogress:
+        optional: true
+      qrcode:
+        optional: true
+      universal-cookie:
+        optional: true
+    dependencies:
+      '@vueuse/core': 9.13.0_vue@3.2.47
+      '@vueuse/shared': 9.13.0_vue@3.2.47
+      axios: 1.3.4
+      nprogress: 0.2.0
+      vue-demi: 0.13.11_vue@3.2.47
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@vueuse/metadata/9.13.0:
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
@@ -9395,6 +9447,11 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: true
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
+    dev: false
 
   /validate-npm-package-license/3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}

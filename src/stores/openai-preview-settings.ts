@@ -6,6 +6,7 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
     apiKey: 'sk-gCl2************',
     isSettingOpen: false,
     isSettingBackupOpen: true,
+    prompts: [],
     davinci003: {
       prompt: 'Abaikan perintah saya sebelumnya. Saya perintahkan anda berperan sebagai Conten Writer Pakar Komputer yang sangat mahir berbahasa Indonesia dan lancar menulis. Tulis artikel yang panjang dan optiomal untuk SEO dengan judul artikel "{keyword}". Panjang artikel Minimal 600 kata. Saya membutuhkan konten yang unik dan murni bukan hasil plagiarisme. Tulislah konten dengan gaya percayakan seolah-olah ditulis oleh manusia. Saat menyiapkan artikel, tulislah kata-kata yang di perlukan dengan huruf tebal. Tulis dalam file HTML tanpa html dan tag body. Artikel terdiri dari minimal 20 paragraf. Setiap paragraf harus memiliki minimal 200 kata. Judul pertama harus menggunakan tag <h1>, sub judul harus menggunakan tag <h2> dan paragraf harus menggunakan tag <p>. ',
       model: 'text-davinci-003',
@@ -30,11 +31,15 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
       stream: false,
       logprobs: null,
       keyword: '',
+      prompt: {
+        id: '',
+        name: '',
+        value: '',
+      },
       messages: [
 
         {
-          role: 'user', content: `The article should include Creative Title (should be in H1 Heading), SEO meta description, Introduction, headings (Should be h2 heading) and format it as HTML Blog Post, sub headings (h3, h4,h5,h6 headings), bullet points or Numbered list if needed, frequently asked questions and conclusion.
-        After the title insert image using this format "https://tse1.mm.bing.net/th?q={app_name}".`
+          role: 'user', content: 'asda',
         },
 
       ],
@@ -127,7 +132,7 @@ export const usePreviewSettingsStore = defineStore('preview-settings', () => {
           messages: [
             {
               role: 'user', content: `The article should include Creative Title (should be in H1 Heading), SEO meta description, Introduction, headings (Should be h2 heading) and format it as HTML Blog Post, sub headings (h3, h4,h5,h6 headings), bullet points or Numbered list if needed, frequently asked questions and conclusion.
-            After the title insert image using this format "https://tse1.mm.bing.net/th?q={app_name}".`
+            After the title insert image using this format "https://tse1.mm.bing.net/th?q={app_name}".`,
             },
           ],
           lastResult: '',

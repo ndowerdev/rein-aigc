@@ -1,5 +1,6 @@
 <script setup>
 import axios from 'axios'
+
 import { EventSourcePolyfill, NativeEventSource } from 'event-source-polyfill'
 
 // import { useLoading } from 'vue-loading-overlay'
@@ -92,7 +93,7 @@ const saveAndExecute = function () {
     },
     data: {
       model: previewSettings.settings.gptTurbo.model,
-      messages: formMessage.value,
+      messages: previewSettings.settings.gptTurbo.messages,
       temperature: previewSettings.settings.gptTurbo.temperature,
       top_p: previewSettings.settings.gptTurbo.top_p,
       // stream: true,
@@ -102,31 +103,33 @@ const saveAndExecute = function () {
   }).then((response) => {
     isLoading.value = false
     previewSettings.settings.gptTurbo.lastResult = response.data
+  }).catch((e) => {
+    isLoading.value = false
+    showtAlert('401 Error, Check API Key!')
   })
 }
 
 watch(
+  () => previewSettings.settings.gptTurbo.prompt, (newVal, oldVal) => {
+    // ip address input validation
+
+    previewSettings.settings.gptTurbo.messages[0].content = newVal.value.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language).replaceAll('[TARGETLANGUAGE]', previewSettings.settings.gptTurbo.language).replaceAll('[PROMPT]', previewSettings.settings.gptTurbo.keyword)
+  },
+
+  { deep: true },
+)
+
+watch(
   () => previewSettings.settings.gptTurbo.messages, (newVal, oldVal) => {
     // ip address input validation
-    formMessage.value = newVal.map((item) => {
-      return {
-        role: item.role,
-        content: item.content.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language),
-      }
-    })
+    previewSettings.settings.gptTurbo.messages[0].content.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language).replaceAll('[TARGETLANGUAGE]', previewSettings.settings.gptTurbo.language).replaceAll('[PROMPT]', previewSettings.settings.gptTurbo.keyword)
   },
 
   { deep: true },
 )
 watch(
   () => previewSettings.settings.gptTurbo.keyword, (newVal, oldVal) => {
-    // ip address input validation
-    formMessage.value = previewSettings.settings.gptTurbo.messages.map((item) => {
-      return {
-        role: item.role,
-        content: item.content.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language),
-      }
-    })
+    previewSettings.settings.gptTurbo.messages[0].content = previewSettings.settings.gptTurbo.prompt.value.replaceAll('{keyword}', previewSettings.settings.gptTurbo.keyword).replaceAll('{language}', previewSettings.settings.gptTurbo.language).replaceAll('[TARGETLANGUAGE]', previewSettings.settings.gptTurbo.language).replaceAll('[PROMPT]', previewSettings.settings.gptTurbo.keyword)
   },
 
   { deep: true },
@@ -138,15 +141,21 @@ watch(
   <h2 class="text-xl text-center m-5 font-bold text-green-300">
     REIN AIGC - OpenAI Content Generator Online
   </h2>
-  <div ref="formContainer"
-       class="flex lg:flex-row flex-col  gap-3">
+  <div
+    ref="formContainer"
+    class="flex lg:flex-row flex-col  gap-3"
+  >
     <div class="right w-full lg:w-1/3  ">
       <div class="w-full max-w-xl m-auto ">
         <!-- collapse1 -->
-        <div class="collapse  collapse-arrow border border-neutral bg-neutral "
-             :class="{ 'collapse-open': previewSettings.settings.isSettingOpen === true, 'collapse-close': previewSettings.settings.isSettingOpen === false }">
-          <input type="checkbox"
-                 @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen">
+        <div
+          class="collapse  collapse-arrow border border-neutral bg-neutral "
+          :class="{ 'collapse-open': previewSettings.settings.isSettingOpen === true, 'collapse-close': previewSettings.settings.isSettingOpen === false }"
+        >
+          <input
+            type="checkbox"
+            @click="previewSettings.settings.isSettingOpen = !previewSettings.settings.isSettingOpen"
+          >
           <div class="collapse-title text-xl font-medium">
             SETTINGS
           </div>
@@ -155,38 +164,67 @@ watch(
             <Divider title="API Settings" />
             <div class="flex flex-wrap -mx-3 m-3">
               <div class="w-full  px-3  md:mb-0">
-                <input id="api-key"
-                       v-model="previewSettings.settings.apiKey"
-                       class="input input-bordered  w-full"
-                       type="text"
-                       placeholder="Jane">
+                <input
+                  id="api-key"
+                  v-model="previewSettings.settings.apiKey"
+                  class="input input-bordered  w-full"
+                  type="text"
+                  placeholder="Jane"
+                >
 
-                <a href="https://www.facebook.com/rendrian.g.arma/"
-                   class="btn btn-outline mt-3  w-full"
-                   target="_blank">$120 API Limit IDR 20K ONLY!</a>
+                <a
+                  href="https://www.facebook.com/rendrian.g.arma/"
+                  class="btn btn-outline mt-3  w-full"
+                  target="_blank"
+                >$120 API Limit IDR 20K ONLY!</a>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 m-3">
               <div class="w-full  px-3  md:mb-0">
                 <Divider title="{keyword}" />
-                <input id="api-key"
-                       v-model="previewSettings.settings.gptTurbo.keyword"
-                       class="input input-bordered  w-full"
-                       type="text"
-                       placeholder="10 Alasan Cewek Mudah Marah">
+                <input
+                  id="api-key"
+                  v-model="previewSettings.settings.gptTurbo.keyword"
+                  class="input input-bordered  w-full"
+                  type="text"
+                  placeholder="10 Alasan Cewek Mudah Marah"
+                >
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 m-3">
               <div class="w-full  px-3  md:mb-0">
                 <Divider title="{language}" />
-                <select id="language"
-                        v-model="previewSettings.settings.gptTurbo.language"
-                        class="select select-bordered  w-full">
-                  <option v-for="(item, index) in languageList"
-                          :key="index"
-                          :value="item.name"
-                          :selected="item.name === previewSettings.settings.davinci003.language">
+                <select
+                  id="language"
+                  v-model="previewSettings.settings.davinci003.language"
+                  class="select select-bordered  w-full"
+                >
+                  <option
+                    v-for="(item, index) in languageList"
+                    :key="index"
+                    :value="item.name"
+                    :selected="item.name === previewSettings.settings.davinci003.language"
+                  >
                     {{ item.native_name }}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 m-3">
+              <div class="w-full  px-3  md:mb-0">
+                <Divider title="{prompt}" />
+                <select
+                  id="language"
+                  v-model="previewSettings.settings.gptTurbo.prompt"
+                  class="select select-bordered  w-full"
+                >
+                  <option
+                    v-for="(item, index) in previewSettings.settings.prompts"
+                    :key="index"
+                    :value="item"
+                    :selected="previewSettings.settings.gptTurbo.prompt.value === item.value"
+                  >
+                    {{ item.name }}
                   </option>
                 </select>
               </div>
@@ -195,74 +233,19 @@ watch(
             <Divider title="Actions" />
             <div class="flex flex-wrap -mx-3">
               <div class=" w-1/2 px-3">
-                <button class="btn w-full btn-success "
-                        @click="saveAndExecute">
+                <button
+                  class="btn w-full btn-success "
+                  @click="saveAndExecute"
+                >
                   ▶️ Execute
                 </button>
               </div>
               <div class=" w-1/2 px-3">
-                <button class="btn w-full btn-warning "
-                        @click="previewSettings.$resetTurbo()">
+                <button
+                  class="btn w-full btn-warning "
+                  @click="previewSettings.$resetTurbo()"
+                >
                   🔄️ Reset
-                </button>
-              </div>
-            </div>
-
-            <Divider title="Add Parameters" />
-
-            <div class="form-control">
-              <div class="flex flex-col w-full gap-1">
-                <select v-model="newMessage.role"
-                        class="select select-bordered w-full">
-                  <option value=""
-                          selected
-                          disabled
-                          hidden>
-                    Choose Role
-                  </option>
-                  <option value="system">
-                    System
-                  </option>
-                  <option value="user">
-                    User
-                  </option>
-                  <option value="assistant">
-                    Assistant
-                  </option>
-                </select>
-                <textarea v-model="newMessage.content"
-                          type="text"
-                          placeholder="Content"
-                          class="textarea " />
-                <button class="btn "
-                        @click="addThisMessage">
-                  ➕ Add
-                </button>
-              </div>
-            </div>
-
-            <div class="form-control ">
-              <div v-for="(item, index) in previewSettings.settings.gptTurbo.messages"
-                   :key="index"
-                   class="flex-col w-full gap-1">
-                <Divider :title="`Parameter #${index + 1}`" />
-                <select v-model="item.role"
-                        class="select select-bordered w-full mb-1">
-                  <option v-for="(itemx, indexx) in roles"
-                          :key="indexx"
-                          :value="itemx.val"
-                          :selected="itemx.val === item.role">
-                    {{ itemx.name }}
-                  </option>
-                </select>
-                <textarea v-model="item.content"
-                          type="text"
-                          placeholder="Content"
-                          class="textarea textarea-bordered w-full"
-                          rows="3" />
-                <button class="btn w-full btn-outline btn-warning btn-sm"
-                        @click="removeThisMessage(index)">
-                  ❌ delete
                 </button>
               </div>
             </div>
@@ -270,11 +253,15 @@ watch(
         </div>
         <!-- collapse2 -->
 
-        <div :class="{ 'collapse-open': previewSettings.settings.isSettingBackupOpen === true }"
-             class="collapse  collapse-arrow border border-neutral bg-neutral mt-3">
-          <input type="checkbox"
-                 class="peer"
-                 @click="previewSettings.settings.isSettingBackupOpen = !previewSettings.settings.isSettingBackupOpen">
+        <div
+          :class="{ 'collapse-open': previewSettings.settings.isSettingBackupOpen === true }"
+          class="collapse  collapse-arrow border border-neutral bg-neutral mt-3"
+        >
+          <input
+            type="checkbox"
+            class="peer"
+            @click="previewSettings.settings.isSettingBackupOpen = !previewSettings.settings.isSettingBackupOpen"
+          >
           <div class="collapse-title text-xl font-medium">
             SETTINGS BACKUP
           </div>
@@ -292,12 +279,13 @@ watch(
         <div class="flex flex-wrap ">
           <div class="w-full px-3  md:mb-0">
             <Divider title=" RESULT" />
-
-
-            <textarea v-model="hasil"
-                      class="textarea textarea-bordered textarea-md w-full "
-                      placeholder="Loading..."
-                      rows="20" />
+            <!-- <div>{{ previewSettings.settings.gptTurbo.messages[0].content }}</div> -->
+            <textarea
+              v-model="hasil"
+              class="textarea textarea-bordered textarea-md w-full "
+              placeholder="Loading..."
+              rows="20"
+            />
           </div>
         </div>
       </div>

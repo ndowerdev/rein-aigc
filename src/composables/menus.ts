@@ -7,6 +7,10 @@ const NavMenus = [
     name: 'Davinci 003',
     routeName: 'reinsaigc-index',
   },
+  {
+    name: 'Prompts',
+    routeName: 'reinsaigc-prompt-manager',
+  },
 
   // {
   //   name: 'Project',

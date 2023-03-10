@@ -22,7 +22,7 @@
   "../../../@vite-plugin-pages/route-block": [
   ],
   "../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/assets/virtual_pwa-register-096cba56.js"
+    "/assets/virtual_pwa-register-ce15a868.js"
   ],
   "../../../@vite-plugin-vue-layouts/generated-layouts": [
   ],
@@ -194,6 +194,18 @@
   ],
   "node_modules/.pnpm/unhead@1.1.21/node_modules/unhead/dist/index.mjs": [
   ],
+  "node_modules/.pnpm/uuid@9.0.0/node_modules/uuid/dist/esm-browser/native.js": [
+    "/assets/prompt-manager-ec6bde25.js"
+  ],
+  "node_modules/.pnpm/uuid@9.0.0/node_modules/uuid/dist/esm-browser/rng.js": [
+    "/assets/prompt-manager-ec6bde25.js"
+  ],
+  "node_modules/.pnpm/uuid@9.0.0/node_modules/uuid/dist/esm-browser/stringify.js": [
+    "/assets/prompt-manager-ec6bde25.js"
+  ],
+  "node_modules/.pnpm/uuid@9.0.0/node_modules/uuid/dist/esm-browser/v4.js": [
+    "/assets/prompt-manager-ec6bde25.js"
+  ],
   "node_modules/.pnpm/vite-ssg@0.22.1_xz4hcy7itaa5wxvfd7dx42vvpq/node_modules/vite-ssg/dist/index.mjs": [
   ],
   "node_modules/.pnpm/vite-ssg@0.22.1_xz4hcy7itaa5wxvfd7dx42vvpq/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
@@ -219,6 +231,9 @@
   ],
   "src/components/Divider.vue": [
   ],
+  "src/components/ModalEditPrompt.vue": [
+    "/assets/prompt-manager-ec6bde25.js"
+  ],
   "src/components/ModalError.vue": [
   ],
   "src/components/ModalSettingsBackup.vue": [
@@ -226,7 +241,7 @@
   "src/components/ModalSettingsRestore.vue": [
   ],
   "src/components/TheNavbar.vue": [
-    "/assets/dashboard-9c1d9807.js"
+    "/assets/dashboard-341781cd.js"
   ],
   "src/components/TurboSettings.vue": [
   ],
@@ -237,21 +252,21 @@
   "src/composables/helper.ts": [
   ],
   "src/composables/menus.ts": [
-    "/assets/dashboard-9c1d9807.js"
+    "/assets/dashboard-341781cd.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404-ab1241fa.js"
+    "/assets/404-1cec686c.js"
   ],
   "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/404-ab1241fa.js"
+    "/assets/404-1cec686c.js"
   ],
   "src/layouts/dashboard.vue": [
-    "/assets/dashboard-9c1d9807.js"
+    "/assets/dashboard-341781cd.js"
   ],
   "src/layouts/default.vue": [
   ],
   "src/layouts/home.vue": [
-    "/assets/home-3197620e.js"
+    "/assets/home-62deca77.js"
   ],
   "src/main.ts": [
   ],
@@ -266,12 +281,15 @@
   "src/modules/router.ts": [
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_-d7b233c2.js"
+    "/assets/_...all_-a3e33ca1.js"
   ],
   "src/pages/index.vue": [
   ],
   "src/pages/openai-davinci-003-prompt-tester.vue": [
-    "/assets/openai-davinci-003-prompt-tester-4a289b4b.js"
+    "/assets/openai-davinci-003-prompt-tester-04a23f7a.js"
+  ],
+  "src/pages/prompt-manager.vue": [
+    "/assets/prompt-manager-ec6bde25.js"
   ],
   "src/stores/openai-preview-settings.ts": [
   ],
