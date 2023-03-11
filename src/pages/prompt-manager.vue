@@ -94,7 +94,7 @@ const addToInput = (prompt) => {
             type="text"
             placeholder="Prompt"
             class="textarea textarea-bordered w-full"
-            rows="3"
+            rows="15"
           />
           <button
             class="btn w-full btn-success "
