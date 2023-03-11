@@ -35,7 +35,8 @@ export default defineConfig({
           reactivityTransform: true,
           template: {
             compilerOptions: {
-              isCustomElement: tag => ['loading'].includes(tag),
+              isCustomElement: tag => ['loading', 'paginate'].includes(tag),
+              // isCustomElement: tag => ['paginate'].includes(tag),
             },
           },
         }),

@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     ModalProjectInput: typeof import('./components/ModalProjectInput.vue')['default']
     ModalSettingsBackup: typeof import('./components/ModalSettingsBackup.vue')['default']
     ModalSettingsRestore: typeof import('./components/ModalSettingsRestore.vue')['default']
+    PromptBrowser: typeof import('./components/PromptBrowser.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TableProjectLists: typeof import('./components/TableProjectLists.vue')['default']

@@ -13,9 +13,9 @@ import 'vue-loading-overlay/dist/css/index.css'
 import './styles/main.css'
 // import 'uno.css'
 import 'sweetalert2/dist/sweetalert2.min.css'
+import '@hennge/vue3-pagination/dist/vue3-pagination.css'
 
 const routes = setupLayouts(generatedRoutes)
-
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
   App,
@@ -24,6 +24,7 @@ export const createApp = ViteSSG(
     // install all modules under `modules/`
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))
       .forEach(i => i.install?.(ctx))
+
     ctx.app.use(VueClipboard, {
       autoSetContainer: true,
       appendToBody: true,

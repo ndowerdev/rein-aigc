@@ -1,6 +1,6 @@
 <script setup>
 import { v4 as uuidv4 } from 'uuid'
-
+const props = defineProps(['onAddToInput'])
 const initialPrompt = {
   id: '',
   name: '',
@@ -24,7 +24,7 @@ const addOrEdit = () => {
   // check if not exist
   if (!localPrompts.some(e => e.id === promptModel.value.id)) {
     localPrompts.push(promptModel.value)
-    location.reload()
+    promptModel.value = initialPrompt
   }
   else {
     const index = localPrompts.findIndex(e => e.id === promptModel.value.id)
@@ -50,6 +50,13 @@ const closeEditPrompt = () => {
 const promptToEditValue = computed(() => {
   return promptToEdit.value
 })
+
+const addToInput = (prompt) => {
+  promptModel.value = {
+    name: prompt.name,
+    value: prompt.prompt,
+  }
+}
 </script>
 
 <template>
@@ -104,7 +111,7 @@ const promptToEditValue = computed(() => {
           <div class="w-full px-3  md:mb-0">
             <Divider title=" RESULT" />
             <div class="overflow-x-auto">
-              <table class="table w-full">
+              <table class="table w-full table-compact">
                 <!-- head -->
                 <thead />
                 <tbody>
@@ -134,6 +141,11 @@ const promptToEditValue = computed(() => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div class="overflow-x-auto">
+              <Divider title="BROWSE PROMPT" />
+              <PromptBrowser @add-to-input="addToInput" />
             </div>
           </div>
         </div>
