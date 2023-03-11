@@ -53,6 +53,7 @@ const promptToEditValue = computed(() => {
 
 const addToInput = (prompt) => {
   promptModel.value = {
+    id: '',
     name: prompt.name,
     value: prompt.prompt,
   }

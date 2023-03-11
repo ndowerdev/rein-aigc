@@ -112,14 +112,7 @@ const cols = ref([
 
       <table class="table w-full table-compact">
         <!-- head -->
-        <thead v-if="filteredData">
-          <tr>
-            <th>Title</th>
-            <th class="text-center">
-              Action
-            </th>
-          </tr>
-        </thead>
+
         <tbody v-if="isLoading">
           <div class="flex flex-col text-center m-auto items-center">
             <img src="/loading.gif" alt="" class="text-center" width="250">
