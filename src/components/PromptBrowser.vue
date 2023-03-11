@@ -33,28 +33,13 @@ const Paginator = (items, current_page, per_page) => {
 
 const filterDataBySearch = () => {
   if (data.value) {
-    const temp = data.value.filter(item => item.name.includes(searchThis.value) || item.teaser.includes(searchThis.value) || item.prompt.includes(searchThis.value))
+    const temp = data.value.filter(item => item.name.toLowerCase().includes(searchThis.value.toLowerCase()) || item.teaser.toLowerCase().includes(searchThis.value.toLowerCase()) || item.prompt.toLowerCase().includes(searchThis.value.toLowerCase()))
     filteredDataBySearch.value = temp
     filteredData.value = Paginator(temp, page.value, perPage.value)
   }
   else {
     filteredDataBySearch.value = data.value
   }
-}
-
-const getDataByPage = (pageNum) => {
-  console.log(filteredData.value.items.length, pageNum)
-  // const offset = perPage.value * (pageNum - 1)
-  // const totalPages = Math.ceil(filteredData.value.items.length / perPage.value)
-  // const paginatedItems = filteredData.value.items.slice(offset, perPage.value * pageNum)
-
-  // return {
-  //   previousPage: pageNum - 1 ? pageNum - 1 : null,
-  //   nextPage: totalPages > page ? pageNum + 1 : null,
-  //   total: filter.length,
-  //   totalPages,
-  //   items: paginatedItems,
-  // }
 }
 
 watch(
@@ -66,15 +51,7 @@ watch(
 
   { deep: true },
 )
-// watch(
-//   () => page.value, (newVal, oldVal) => {
-//     // ip address input validation
-//     // filterData()
-//     getDataByPage(page.value)
-//   },
 
-//   { deep: true },
-// )
 watch(
   () => searchThis.value, (newVal, oldVal) => {
     // ip address input validation
@@ -87,7 +64,6 @@ watch(
 )
 
 onMounted(() => {
-  console.log('mounted')
   filterDataBySearch()
   // filteredDataBySearch.value = data.value
 })
